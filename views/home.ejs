@@ -1,0 +1,18 @@
+
+<%-include("partials/header")%>
+<h1>Home</h1>
+    
+<p><%=para1%></p>
+<!-- <p><%=para2%></p> -->
+<br>
+<% for(var i=0;i<para2.length ;i++){ %>
+    <strong><h1><%=para2[i].title%></h1></strong>
+    <p>
+        <%=para2[i].body.substring(0,250)+" ..."%>
+        <a href="/posts/<%=para2[i].title%>">Read more</a>
+    </p>
+    <br>
+<%}%>
+
+
+<%-include("partials/footer")%>
